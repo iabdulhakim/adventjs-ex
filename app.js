@@ -44,31 +44,19 @@
 // }
 
 
-// ? 
+// ? 3
 
-// function makeGifts(gifts, materials) {
-//   const giftsCanBeMade = [];
+// function findExtraStep(originalSteps, modifiedSteps) {
 
-//   for (let i = 0; i < gifts.length; i++) {
-//       const giftMaterials = gifts[i].split('');
-//       let canMakeGift = true;
+//     for(let i = 0; i < Math.max(originalSteps.length, modifiedSteps.length); i++) {
 
-
-//       for (let j = 0; j < giftMaterials.length; j++) {
-//           if (!materials.includes(giftMaterials[j])) {
-//               canMakeGift = false;
-//               break;
-//           }
-//       }
-
-
-//       if (canMakeGift) {
-//           giftsCanBeMade.push(gifts[i]);
-//       }
-//   }
-
-//   return giftsCanBeMade;
+//         if(originalSteps[i] !== modifiedSteps[i]) {
+//             return modifiedSteps[i];
+//         }
+//     }
 // }
+// let originalSteps = ['cut wood', 'paint', 'assemble'];
+// let modifiedSteps = ['cut wood',  'paint',"aas", 'assemble'];
 
 
 // ? 4
@@ -90,6 +78,7 @@
 
 //     return result;
 // }
+
 
 
 // ? 6
@@ -117,6 +106,35 @@
 
 //     return maxDistance;
 // }
+
+
+
+// ? 
+
+// function makeGifts(gifts, materials) {
+//   const giftsCanBeMade = [];
+
+//   for (let i = 0; i < gifts.length; i++) {
+//       const giftMaterials = gifts[i].split('');
+//       let canMakeGift = true;
+
+
+//       for (let j = 0; j < giftMaterials.length; j++) {
+//           if (!materials.includes(giftMaterials[j])) {
+//               canMakeGift = false;
+//               break;
+//           }
+//       }
+
+
+//       if (canMakeGift) {
+//           giftsCanBeMade.push(gifts[i]);
+//       }
+//   }
+
+//   return giftsCanBeMade;
+// }
+
 
 
 // ? 13
